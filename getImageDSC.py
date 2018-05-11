@@ -12,7 +12,7 @@ def liveview():
         print("No camera found, aborting")
         quit()
 
-    mode = camera.getAvailableApiList()    
+    mode = camera.getAvailableApiList()
     if 'startRecMode' in (mode['result'])[0]:
         camera.startRecMode()
         time.sleep(2)

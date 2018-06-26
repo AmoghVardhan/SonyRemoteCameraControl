@@ -9,7 +9,7 @@ import os
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-def liveview():
+def getImage():
 
     search = ControlPoint()
     cameras =  search.discover(5)
@@ -48,4 +48,4 @@ def liveview():
        img = urllib2.urlopen(pic_url).read()
        c.send(str(img))
        c.close()
-liveview()
+getImage()
